@@ -59,10 +59,8 @@ pub fn perft(
 }
 
 pub fn perft_inner(position: &mut Position, depth: usize) -> usize {
-  if depth == 1 {
-    let mut counter = MoveCounter::new();
-    legal_moves(&position, &mut counter);
-    return counter.moves as usize;
+  if depth == 0 {
+    return 1;
   }
 
   let mut moves = MoveVec::new();

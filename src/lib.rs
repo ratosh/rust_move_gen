@@ -11,9 +11,9 @@
 //! assert_eq!(list.len(), 20);
 //! ```
 
-#![feature(test)]
-#![feature(platform_intrinsics)]
-#![feature(const_fn)]
+//#![feature(test)]
+//#![feature(platform_intrinsics)]
+//#![feature(const_fn)]
 
 pub mod bb;
 mod board;

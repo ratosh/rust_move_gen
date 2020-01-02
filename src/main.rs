@@ -1,6 +1,6 @@
-#![feature(test)]
-#![feature(platform_intrinsics)]
-#![feature(const_fn)]
+//#![feature(test)]
+//#![feature(platform_intrinsics)]
+//#![feature(const_fn)]
 
 pub mod bb;
 mod board;
@@ -39,7 +39,7 @@ use std::time::Instant;
 fn main() {
   let position = &mut Position::from_fen(STARTING_POSITION_FEN).unwrap();
 
-  let depth: usize = 6;
+  let depth: usize = 7;
   println!(
     "Running performance test on starting position, depth {}",
     depth
